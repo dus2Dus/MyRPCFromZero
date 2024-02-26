@@ -55,7 +55,7 @@ public class WorkThread implements Runnable {
     }
 
     private RPCResponse getResponse(RPCRequest request) {
-        // 得到服务名
+        // 得到服务名(接口名)
         String interfaceName = request.getInterfaceName();
         // 得到服务端相应服务实现类
         Object service = serviceProvider.getService(interfaceName);
